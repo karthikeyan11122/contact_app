@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>
+
+                <i class="fa-sharp fa-solid fa-plus"></i> &nbsp;
+                View Contact Page
+        </h1>
+
+        <p style="text-align: justify;">demo,Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sequi
+            voluptatem, consequuntur ipsam,
+            exercitationem natus neque soluta ducimus quas, quidem illum veniam tempora numquam nam facere debitis
+            aliquam quibusdam tempore.,Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora totam quam
+            facilis quibusdam rem facere placeat aperiam, exercitationem architecto deserunt iste iure impedit.
+            Recusandae natus harum, rem dolorum eos suscipit!</p>
+        </div>
+    </div>
+</div>
+<!-- <pre>
+    {{groupId | json}}
+</pre>  -->
+<!-- view contact -->
+
+<div class="container mt-4 mb-5">
+    <div class="row border p-5 align-items-center">
+        <div class="col md-4">
+            <img [src]="contact.photo"
+            alt="no image" class="contact_image mt-2">
+            <br>
+            <a routerLink="/" class="btn btn-warning ms-4 mt-2"> Go Baclk</a>
+
+
+        </div>
+        <div class="col-md-8">
+            <!-- contact details -->
+            <ul class="list-group">
+                <li class="list-group-item"><b>name</b>:{{contact.name}}</li>
+                <li class="list-group-item">E mail:{{contact.email}}</li>
+                <li class="list-group-item">Mobail:{{contact.mobile}}</li>
+                <li class="list-group-item">Company:{{contact.company}}</li>
+                <li class="list-group-item">Title:{{contact.title}}</li>
+                <li class="list-group-item">group:{{groupId.id}}</li>
+
+              </ul>
+        </div>
+    </div>
+</div>
